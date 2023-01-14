@@ -37,11 +37,12 @@ button{
 
 .wrapText{
     border-radius: 8px;
-    padding: 5px 8px;
+    padding: 5px 16px;
+    font-size: 1.3rem;
+    text-transform: capitalize;
 }
 
 .noneBackground{
-    font-size: 1rem;
     border: 1px solid $lightBlue;
 }
 
