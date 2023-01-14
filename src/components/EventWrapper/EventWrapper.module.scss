@@ -1,0 +1,35 @@
+@import '../../style/variables';
+
+.wrapper{
+    width: 100%;
+    margin-top: 4px;
+    background-color: $darkOrange;
+    border-left: 4px solid $darkBlue;
+    border-radius: 3px;
+    color: $darkBlue;
+    cursor: pointer;
+    @media (max-width: 500px) {
+        display:none;
+    }
+}
+
+.title{
+    white-space: nowrap;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.borderAppoinment{
+    background-color: $lightOrange;
+    border-left-color: $lightBlue;
+    color: $lightBlue
+}
+
+.borderWebinar{
+    background-color: $lightBlue;
+    border-left-color: $orange;
+    color: #fff;
+}
+

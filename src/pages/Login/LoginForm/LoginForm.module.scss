@@ -1,0 +1,32 @@
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  background-color: rgb(185, 185, 244);
+}
+
+.form {
+  margin: auto;
+  width: 30%;
+  height: 300px;
+  background-color: rgb(75, 85, 227);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 10px;
+}
+
+// button {
+//   background-color: rgb(255, 255, 255);
+//   margin: auto;
+//   width: 50%;
+//   padding: 10px;
+//   border: none;
+//   border-radius: 10px;
+//   cursor: pointer;
+// }

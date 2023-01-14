@@ -1,0 +1,123 @@
+@import '../../style/variables';
+.wrapper{
+    position: fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    right: 0;
+    z-index: -1;
+    display:flex;
+    transition: all 0.4s linear;
+    &.active{
+        z-index: 6;
+    }
+}
+
+.container{
+    width: 300px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid $lightBlue;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: translateY(170%);
+    opacity: 0;
+    transition: all 0.4s linear;
+    font-size: 1.2rem;
+
+    &.active{
+        transform: translateY(0);
+        opacity: 1;
+
+    }
+}
+
+.head{
+    background-color: $lightBlue;
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.topic{
+    padding: 8px 0;
+    text-align: center;
+}
+
+
+
+.body{
+    background-color: $lightOrange;
+    padding: 10px;
+}
+
+.content{
+    display: flex;
+    width: 100%;
+}
+
+.left{
+    flex:1;
+}
+
+.right{
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    display:inherit;
+    justify-content:center;
+    align-items: center;
+    background-color: $lightBlue
+
+}
+
+.title{
+    font-size:1.4rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+
+}
+
+.icon{
+    color: #fff;
+    font-size: 2rem;
+}
+
+.close{
+    position: absolute;
+    right:3%;
+    top: 10%;
+}
+
+.button{
+    padding: 6px 8px;
+    color: #fff;
+    border-radius: 7px;
+    background-color: $lightBlue;
+
+    &Container{
+        width: 100%;
+        display:flex;
+        justify-content:center;
+    }
+}
+
+.client{
+    margin-top: 10px;
+    display: flex;
+    align-items:center;
+    &Img{
+        width: 35px;
+        height: 35px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 100%;
+    }
+    &
+    &Link{
+        margin-left: 10px;
+        color: $lightBlue;
+    }
+}
