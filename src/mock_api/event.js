@@ -177,4 +177,92 @@ export default [
         clientLink: 'http://dummyurl.com',
         type: 'appointment'
     },
+    {
+        id: 15,
+        allDay: false,
+        end: new Date('January 18, 2023 20:00:00'),
+        start: new Date('January 18, 2023 20:20:00'),
+        title: 'Webinar: Mindfulness Meditation: Wednesday Pause - Ho Chi Minh',
+        url: 'http://dummyurl.com',
+        img: clientImg,
+        clientLink: 'http://dummyurl.com',
+        type: 'webinar'
+    },
+    {
+        id: 15,
+        allDay: false,
+        end: new Date('January 18, 2023 13:00:00'),
+        start: new Date('January 18, 2023 16:00:00'),
+        title: 'Second Session with Alex Stan',
+        url: 'http://dummyurl.com',
+        img: clientImg,
+        clientLink: 'http://dummyurl.com',
+        type: 'appointment'
+    },
+    {
+        id: 16,
+        allDay: false,
+        end: new Date('January 19, 2023 22:00:00'),
+        start: new Date('January 19, 2023 23:00:00'),
+        title: 'Webinar: Effective Note-Taking- Ho Chi Minh City',
+        url: 'http://dummyurl.com',
+        img: clientImg,
+        clientLink: 'http://dummyurl.com',
+        type: 'webinar'
+    },
+    {
+        id: 17,
+        allDay: false,
+        end: new Date('January 17, 2023 7:00:00'),
+        start: new Date('January 17, 2023 8:00:00'),
+        title: 'Webinar: Speed Reading Crash Course - Ho Chi Minh City',
+        url: 'http://dummyurl.com',
+        img: clientImg,
+        clientLink: 'http://dummyurl.com',
+        type: 'webinar'
+    },
+    {
+        id: 18,
+        allDay: false,
+        end: new Date('January 18, 2023 19:00:00'),
+        start: new Date('January 18, 2023 22:00:00'),
+        title: 'Webinar: YEP - PMI CHAPTER VN STUDY GROUP ++',
+        url: 'http://dummyurl.com',
+        img: clientImg,
+        clientLink: 'http://dummyurl.com',
+        type: 'webinar'
+    },
+    {
+        id: 19,
+        allDay: false,
+        end: new Date('February 1, 2023 9:00:00'),
+        start: new Date('February 1, 2023 17:00:00'),
+        title: 'Webinar: Corporate Finance Masterclass',
+        url: 'http://dummyurl.com',
+        img: clientImg,
+        clientLink: 'http://dummyurl.com',
+        type: 'webinar'
+    },
+    {
+        id: 20,
+        allDay: false,
+        end: new Date('February 9, 2023 13:00:00'),
+        start: new Date('February 9, 2023 16:00:00'),
+        title: 'Webinar: 2023 5th Asia Pacific Information Technology Conference (APIT 2023)',
+        url: 'http://dummyurl.com',
+        img: clientImg,
+        clientLink: 'http://dummyurl.com',
+        type: 'webinar'
+    },
+    {
+        id: 21,
+        allDay: false,
+        end: new Date('January 10, 2023 13:00:00'),
+        start: new Date('January 10, 2023 16:00:00'),
+        title: 'Webinar: Effective Procurement Operations - Improve Purchasing Efficiency',
+        url: 'http://dummyurl.com',
+        img: clientImg,
+        clientLink: 'http://dummyurl.com',
+        type: 'webinar'
+    },
 ]
