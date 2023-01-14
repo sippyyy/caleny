@@ -6,9 +6,9 @@ export default [
         end: new Date(new Date().getFullYear(), 0, 1),
         start: new Date(new Date().getFullYear(), 0, 1),
         title: 'Happy New Year',
-        url:'http://dummywebiste.com/',
+        url:'http://dummyurl.com',
         img:clientImg,
-        clientLink:'http://dummywebiste.com/',
+        clientLink:'http://dummyurl.com',
         type: 'worldEvent'
     },
     {
@@ -17,9 +17,9 @@ export default [
         end: new Date('January 10, 2023 06:00:00'),
         start: new Date('January 10, 2023 07:00:00'),
         title: 'First Session with Alex Stan',
-        url:'http://dummywebiste.com/',
+        url:'http://dummyurl.com',
         img:clientImg,
-        clientLink:'http://dummywebiste.com/',
+        clientLink:'http://dummyurl.com',
         type: 'appointment'
     },
     {
@@ -28,9 +28,9 @@ export default [
         end: new Date('January 10, 2023 13:00:00'),
         start: new Date('January 10, 2023 16:00:00'),
         title: 'Second Session with Alex Stan',
-        url:'http://dummywebiste.com/',
+        url:'http://dummyurl.com',
         img:clientImg,
-        clientLink:'http://dummywebiste.com/',
+        clientLink:'http://dummyurl.com',
         type: 'appointment'
     },
     
@@ -40,9 +40,9 @@ export default [
         end: new Date('January 15, 2023 13:00:00'),
         start: new Date('January 15, 2023 16:00:00'),
         title: 'Second Session with Alex Stan',
-        url:'http://dummywebiste.com/',
+        url:'http://dummyurl.com',
         img:clientImg,
-        clientLink:'http://dummywebiste.com/',
+        clientLink:'http://dummyurl.com',
         type: 'webinar'
     },
     {
@@ -51,9 +51,9 @@ export default [
         end: new Date(new Date().getFullYear(), 0, 1),
         start: new Date(new Date().getFullYear(), 0, 1),
         title: 'Webinar: Second Session with Alex Stan',
-        url:'http://dummywebiste.com/',
+        url:'http://dummyurl.com',
         img:clientImg,
-        clientLink:'http://dummywebiste.com/',
+        clientLink:'http://dummyurl.com',
         type: 'webinar'
     },
     {
@@ -62,9 +62,9 @@ export default [
         end: new Date(),
         start: new Date(),
         title: 'Webinar: Second Session with Alex Stan',
-        url: 'http://dummywebiste.com/',
+        url: 'http://dummyurl.com',
         img: clientImg,
-        clientLink: 'http://dummywebiste.com/',
+        clientLink: 'http://dummyurl.com',
         type: 'appointment'
     },
     {
@@ -73,9 +73,9 @@ export default [
         start: new Date('January 13, 2023 9:00:00'),
         end: new Date('January 13, 2023 11:00:00'),
         title: 'Webinar: Smart Tech Vietnam 2023',
-        url: 'http://dummywebiste.com/',
+        url: 'http://dummyurl.com',
         img: clientImg,
-        clientLink: 'http://dummywebiste.com/',
+        clientLink: 'http://dummyurl.com',
         type: 'webinar'
     },
     {
@@ -84,9 +84,9 @@ export default [
         start: new Date('January 13, 2023 9:00:00'),
         end: new Date('January 15, 2023 14:00:00'),
         title: 'Webinar: The Axe & Carlsberg Present MARKHESE',
-        url: 'http://dummywebiste.com/',
+        url: 'http://dummyurl.com',
         img: clientImg,
-        clientLink: 'http://dummywebiste.com/',
+        clientLink: 'http://dummyurl.com',
         type: 'webinar'
     },
     {
@@ -95,9 +95,9 @@ export default [
         start: new Date('January 12, 2023 9:00:00'),
         end: new Date('January 12, 2023 18:00:00'),
         title: 'Webinar: Color Fiesta season 10: Ruby',
-        url: 'http://dummywebiste.com/',
+        url: 'http://dummyurl.com',
         img: clientImg,
-        clientLink: 'http://dummywebiste.com/',
+        clientLink: 'http://dummyurl.com',
         type: 'webinar'
     },
     {
@@ -106,9 +106,9 @@ export default [
         start: new Date('January 14, 2023 10:00:00'),
         end: new Date('January 15, 2023 2:00:00'),
         title: 'Webinar: GLOW IN THE DARK PARTY',
-        url: 'http://dummywebiste.com/',
+        url: 'http://dummyurl.com',
         img: clientImg,
-        clientLink: 'http://dummywebiste.com/',
+        clientLink: 'http://dummyurl.com',
         type: 'webinar'
     },
     {
@@ -117,9 +117,9 @@ export default [
         start: new Date('January 18, 2023 22:00:00'),
         end: new Date('January 18, 2023 23:00:00'),
         title: 'Webinar: How to Improve Your Memory - Ho Chi Minh City',
-        url: 'http://dummywebiste.com/',
+        url: 'http://dummyurl.com',
         img: clientImg,
-        clientLink: 'http://dummywebiste.com/',
+        clientLink: 'http://dummyurl.com',
         type: 'webinar'
     },
     {
@@ -128,9 +128,9 @@ export default [
         end: new Date('January 10, 2023 13:00:00'),
         start: new Date('January 10, 2023 16:00:00'),
         title: 'Second Session with Alex Stan',
-        url: 'http://dummywebiste.com/',
+        url: 'http://dummyurl.com',
         img: clientImg,
-        clientLink: 'http://dummywebiste.com/',
+        clientLink: 'http://dummyurl.com',
         type: 'appointment'
     },
     {
@@ -139,9 +139,9 @@ export default [
         end: new Date('January 10, 2023 13:00:00'),
         start: new Date('January 10, 2023 16:00:00'),
         title: 'Second Session with Alex Stan',
-        url: 'http://dummywebiste.com/',
+        url: 'http://dummyurl.com',
         img: clientImg,
-        clientLink: 'http://dummywebiste.com/',
+        clientLink: 'http://dummyurl.com',
         type: 'appointment'
     },
     {
@@ -150,9 +150,9 @@ export default [
         end: new Date('January 14, 2023 13:00:00'),
         start: new Date('January 14, 2023 16:00:00'),
         title: 'Second Session with Alex Stan',
-        url: 'http://dummywebiste.com/',
+        url: 'http://dummyurl.com',
         img: clientImg,
-        clientLink: 'http://dummywebiste.com/',
+        clientLink: 'http://dummyurl.com',
         type: 'appointment'
     },
     {
@@ -161,9 +161,9 @@ export default [
         end: new Date('January 14, 2023 13:00:00'),
         start: new Date('January 14, 2023 16:00:00'),
         title: 'Second Session with Alex Stan',
-        url: 'http://dummywebiste.com/',
+        url: 'http://dummyurl.com',
         img: clientImg,
-        clientLink: 'http://dummywebiste.com/',
+        clientLink: 'http://dummyurl.com',
         type: 'appointment'
     },
     {
@@ -172,9 +172,9 @@ export default [
         end: new Date('January 10, 2023 13:00:00'),
         start: new Date('January 10, 2023 16:00:00'),
         title: 'Second Session with Alex Stan',
-        url: 'http://dummywebiste.com/',
+        url: 'http://dummyurl.com',
         img: clientImg,
-        clientLink: 'http://dummywebiste.com/',
+        clientLink: 'http://dummyurl.com',
         type: 'appointment'
     },
 ]

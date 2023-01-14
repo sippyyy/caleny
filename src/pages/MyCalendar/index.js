@@ -12,6 +12,8 @@ import Toolbar from '../../components/Toolbar'
 import TimeGutterHeader from '../../components/TimeGutterHeader'
 import EventWrapper from '../../components/EventWrapper'
 import Events from '../../components/Events'
+import '../../../node_modules/react-big-calendar/lib/sass/agenda.scss'
+
 
 const mLocalizer = momentLocalizer(moment)
 
@@ -68,13 +70,8 @@ function MyCalendar({
             defaultDate: new Date(),
             formats: {
                 dateFormat: 'D',
-                // the day of the week header in the 'month' view
-                weekdayFormat: (date, culture, localizer) =>
-                    localizer.format(date, 'dddd', culture),
-                // the day header in the 'week' and 'day' (Time Grid) views
                 dayFormat: (date, culture, localizer) =>
                     localizer.format(date, 'dddd Do', culture),
-                // the time in the gutter in the Time Grid views
                 timeGutterFormat: (date, culture, localizer) =>
                     localizer.format(date, 'hh:mm a', culture),
             },

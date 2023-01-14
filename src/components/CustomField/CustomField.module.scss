@@ -3,15 +3,11 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  margin: 5px 0;
 }
 
-input {
-  padding: 8px;
-  border: none;
-  outline: none;
-}
 
-label {
-  font-weight: 700;
+.errorMessage{
+  color: red;
 }
 

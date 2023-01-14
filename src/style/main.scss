@@ -22,3 +22,16 @@ a{
     color: unset;
     text-decoration: none;
 }
+
+input {
+  padding: 8px;
+  border: 1px solid #c3c3c3;
+  outline: none;
+  border-radius:8px;
+  width: 100%;
+}
+
+label {
+  font-weight: 700;
+  margin:5px 0;
+}

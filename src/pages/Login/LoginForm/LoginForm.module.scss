@@ -1,3 +1,6 @@
+@import '../../../style/variables';
+
+
 .wrapper {
   position: fixed;
   top: 0;
@@ -5,28 +8,48 @@
   right: 0;
   bottom: 0;
   display: flex;
-  background-color: rgb(185, 185, 244);
+  background-color: $lightBlue
+}
+
+.container{
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  overflow:hidden;
+  width: 300px;
+  background-color: #fff;
+
+}
+
+.title{
+  padding: 8px 0;
+  width: 100%;
+  text-align:center;
+  background-color:$darkBlue;
+  color: #fff;
 }
 
 .form {
-  margin: auto;
-  width: 30%;
-  height: 300px;
-  background-color: rgb(75, 85, 227);
-  padding: 20px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  border-radius: 10px;
+
 }
 
-// button {
-//   background-color: rgb(255, 255, 255);
-//   margin: auto;
-//   width: 50%;
-//   padding: 10px;
-//   border: none;
-//   border-radius: 10px;
-//   cursor: pointer;
-// }
+.button{
+  margin: auto;
+  padding: 10px 30px;
+  background-color: $darkBlue;
+  color: #fff;
+  border-radius:8px;
+  cursor: pointer;
+
+  &Wrapper{
+    margin-top:10px;
+    width: 100%;
+    display:flex;
+    justify-content:center;
+  }
+}
