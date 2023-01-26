@@ -1,16 +1,18 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { MdKeyboardArrowLeft } from "@react-icons/all-files/md/MdKeyboardArrowLeft";
 import { MdKeyboardArrowRight } from "@react-icons/all-files/md/MdKeyboardArrowRight";
 import clsx from 'clsx'
 import style from './Toolbar.module.scss'
 import { RiArrowUpSLine } from "@react-icons/all-files/ri/RiArrowUpSLine";
 import { useClickAway } from "ahooks";
-
-
+import {event} from "../../mock_api/event";
+import CreateEvent from "./components/CreateEvents";
+import { showPopup } from "../Popup";
 
 function Toolbar(props) {
     const [openViews,setOpenViews] = useState(false)
     const viewRef = useRef(null)
+
     useClickAway(()=>{
         setOpenViews(false)
     },viewRef)
@@ -88,6 +90,10 @@ function Toolbar(props) {
         setOpenViews(openViews === true ? false : true)
     }
 
+    const handleShowPopup = ()=>{
+        showPopup(<CreateEvent events={props.events} setEvents={props.setEvents} />)
+    }
+
     return (
         <div className={clsx(style.wrapper)}>
             <div className={clsx(style.left)}>
@@ -118,6 +124,9 @@ function Toolbar(props) {
             </div>
                 {window.innerWidth > 500 ? 
                 <div className={clsx(style.right)}>
+                    <div onClick={handleShowPopup} className={clsx(style.wrapText, style.allCenter, style.noneBackground,style.orange)}>
+                        <p> Create event </p>
+                    </div>
                     <div ref={viewRef} onClick={handleOpenViews} className={clsx(style.container)}>
                         <p className={clsx(style.wrapText,style.allCenter,style.backgroundText)}>{props.view} <RiArrowUpSLine className={clsx(style.dropDownIcon,{
                             [style.dropDownIconActive] : openViews

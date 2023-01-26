@@ -1,0 +1,42 @@
+@import '../../../../style/variables';
+
+.container{
+    display: flex;
+    &Time{
+        width: 40%;
+        display: inherit;
+        align-items: center;
+    }
+    &Text{
+        width: 90%;
+    }
+}
+
+select{
+    margin-left: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+span{
+    margin: 0 3px;
+}
+
+.section{
+    margin-top: 5px;
+}
+
+
+.button{
+    width: 100%;
+    display:flex;
+    justify-content:center;
+
+    &Submit{
+        padding: 6px 20px;
+        color: #fff;
+        border-radius: 7px;
+        background-color: $lightBlue;
+        margin-top: 10px;
+    }
+}

@@ -27,10 +27,8 @@ function Login() {
             })
         }
         onSubmit={(values,actions)=>{
-            console.log('asdasd')
             axios.post(loginUrl, values)
                 .then(res => {
-                    console.log(res)
                     const {status,data} = res || {}
                     if(status === 200 || status === 201){
                         if(data.token){
@@ -43,7 +41,6 @@ function Login() {
                     }
                 })
                 .catch(err => {
-                    console.log(err.message)
                     showPopup(err.message)
                 })
             dispatch(LoginSlice.actions.setUsername(values.email))

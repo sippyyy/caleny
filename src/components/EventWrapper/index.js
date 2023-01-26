@@ -12,6 +12,8 @@ function EventWrapper(props) {
             [style.borderAppoinment]: props?.event?.type === 'appointment'
         },{
             [style.borderWebinar]: props?.event?.type === 'webinar'
+        },{
+            [style.borderSelfEvent]: props?.event?.type === 'self'
         })}>
             <div className={clsx(style.title)}>{props?.event?.title}</div>
         </div>
