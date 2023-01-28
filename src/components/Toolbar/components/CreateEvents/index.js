@@ -3,12 +3,11 @@ import * as Yup from 'yup'
 import CreateEventForm from "../CreateEventForm";
 import clientImg from '../../../../assets/img/client.jpg'
 import { hidePopup } from "../../../Popup";
-import { useEffect } from "react";
+var randomId = require('random-id');
+var len = 10;
+var pattern = 'c4lEny'
 
-function CreateEvent({events,setEvents}) {
-    useEffect(()=>{
-        console.log(events)
-    },[events])
+function CreateEvent({setEvents}) {
     return ( 
         <Formik
             initialValues={
@@ -21,7 +20,8 @@ function CreateEvent({events,setEvents}) {
                     dayEnd: '',
                     hoursEnd: 0,
                     minutesEnd: 0,
-                    allday:'false'
+                    allday:'false',
+                    url:''
                 }
             }
 
@@ -54,15 +54,15 @@ function CreateEvent({events,setEvents}) {
 
             onSubmit = {(values,actions)=>{
                 const newObj = {
-                    id:events.length,
-                    allday:values.allday === 'false' ? false : true,
-                    clientLink: values?.clientLink ?? 'http://dummyurl.com',
-                    start: new Date(`${values.dayStart} ${values.hoursStart}:${values.minutesStart}:00`),
-                    end: new Date(`${values.dayEnd} ${values.hoursEnd}:${values.minutesEnd}:00`),
-                    img:values?.img??clientImg,
+                    id: randomId(len, pattern),
+                    allDay:values.allday === 'false' ? false : true,
+                    end: new Date(Date.parse(`${values.dayEnd} ${values.hoursEnd}:${values.minutesEnd}:00`)),
+                    start: new Date(Date.parse(`${values.dayStart} ${values.hoursStart}:${values.minutesStart}:00`)),
                     title:values.title,
+                    clientLink: values?.clientLink ?? 'http://dummyurl.com',
+                    img:values?.img??clientImg,
                     type:values.type,
-                    url: values?.url ?? 'http://dummyurl.com'
+                    url: values.url ? values.url : 'http://dummyurl.com'
                 }
                 setEvents(pre=>[...pre,newObj])
                 actions.resetForm({

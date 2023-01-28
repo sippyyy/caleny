@@ -16,9 +16,9 @@ const getTimeTitle =(timeChosen)=>{
 
 
 
-function Events({data,events,setEvents}) {
+function Events({data,setEvents}) {
     const handleOpenPopup = () => {
-        showPopup(<CreateEvent events={events} setEvents={setEvents} />)
+        showPopup(<CreateEvent setEvents={setEvents} />)
     }
     return ( 
         <div className={clsx(style.wrapper)}>

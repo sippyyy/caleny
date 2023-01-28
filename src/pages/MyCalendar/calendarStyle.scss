@@ -832,10 +832,14 @@ button.rbc-input::-moz-focus-inner {
 
 @media (max-width: 500px) {
   .container{
-    height: 250px;
+    height: 280px;
     margin-left: 25px;
     margin-right: 25px;
     margin-bottom: 15px;
+  }
+
+  .rbc-header {
+    font-size: 1.1rem;
   }
 
   .rbc-month-row ,.rbc-day-bg + .rbc-day-bg {

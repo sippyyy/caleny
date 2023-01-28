@@ -1,7 +1,10 @@
 import clientImg from '../../src/assets/img/client.jpg'
+var randomId = require('random-id');
+var len = 10;
+var pattern = 'c4lEny'
 export var event = [
     {
-        id: 0,
+        id: randomId(len, pattern),
         allDay: true,
         end: new Date(new Date().getFullYear(), 0, 1),
         start: new Date(new Date().getFullYear(), 0, 1),
@@ -12,7 +15,7 @@ export var event = [
         type: 'worldEvent'
     },
     {
-        id: 1,
+        id: randomId(len, pattern),
         allDay: false,
         end: new Date('January 10, 2023 06:00:00'),
         start: new Date('January 10, 2023 07:00:00'),
@@ -23,7 +26,7 @@ export var event = [
         type: 'appointment'
     },
     {
-        id: 2,
+        id: randomId(len, pattern),
         allDay: false,
         end: new Date('January 10, 2023 13:00:00'),
         start: new Date('January 10, 2023 16:00:00'),
@@ -35,7 +38,7 @@ export var event = [
     },
 
     {
-        id: 3,
+        id: randomId(len, pattern),
         allDay: true,
         end: new Date(new Date().getFullYear(), 0, 1),
         start: new Date(new Date().getFullYear(), 0, 1),
@@ -46,7 +49,7 @@ export var event = [
         type: 'webinar'
     },
     {
-        id: 4,
+        id: randomId(len, pattern),
         allDay: true,
         end: new Date(),
         start: new Date(),
@@ -57,7 +60,7 @@ export var event = [
         type: 'appointment'
     },
     {
-        id: 5,
+        id: randomId(len, pattern),
         allDay: true,
         start: new Date('January 13, 2023 9:00:00'),
         end: new Date('January 13, 2023 11:00:00'),
@@ -68,7 +71,7 @@ export var event = [
         type: 'webinar'
     },
     {
-        id: 6,
+        id: randomId(len, pattern),
         allDay: true,
         start: new Date('January 13, 2023 9:00:00'),
         end: new Date('January 15, 2023 14:00:00'),
@@ -79,7 +82,7 @@ export var event = [
         type: 'webinar'
     },
     {
-        id: 7,
+        id: randomId(len, pattern),
         allDay: true,
         start: new Date('January 12, 2023 9:00:00'),
         end: new Date('January 12, 2023 18:00:00'),
@@ -90,7 +93,7 @@ export var event = [
         type: 'webinar'
     },
     {
-        id: 8,
+        id: randomId(len, pattern),
         allDay: true,
         start: new Date('January 14, 2023 10:00:00'),
         end: new Date('January 15, 2023 2:00:00'),
@@ -101,7 +104,7 @@ export var event = [
         type: 'webinar'
     },
     {
-        id: 9,
+        id: randomId(len, pattern),
         allDay: true,
         start: new Date('January 18, 2023 22:00:00'),
         end: new Date('January 18, 2023 23:00:00'),
@@ -112,7 +115,7 @@ export var event = [
         type: 'webinar'
     },
     {
-        id: 10,
+        id: randomId(len, pattern),
         allDay: false,
         end: new Date('January 10, 2023 13:00:00'),
         start: new Date('January 10, 2023 16:00:00'),
@@ -123,7 +126,7 @@ export var event = [
         type: 'appointment'
     },
     {
-        id: 11,
+        id: randomId(len, pattern),
         allDay: false,
         end: new Date('January 10, 2023 13:00:00'),
         start: new Date('January 10, 2023 16:00:00'),
@@ -134,7 +137,7 @@ export var event = [
         type: 'appointment'
     },
     {
-        id: 12,
+        id: randomId(len, pattern),
         allDay: false,
         end: new Date('January 14, 2023 13:00:00'),
         start: new Date('January 14, 2023 16:00:00'),
@@ -145,7 +148,7 @@ export var event = [
         type: 'appointment'
     },
     {
-        id: 13,
+        id: randomId(len, pattern),
         allDay: false,
         end: new Date('January 14, 2023 13:00:00'),
         start: new Date('January 14, 2023 16:00:00'),
@@ -156,7 +159,7 @@ export var event = [
         type: 'appointment'
     },
     {
-        id: 14,
+        id: randomId(len, pattern),
         allDay: false,
         end: new Date('January 10, 2023 13:00:00'),
         start: new Date('January 10, 2023 16:00:00'),
@@ -167,7 +170,7 @@ export var event = [
         type: 'appointment'
     },
     {
-        id: 15,
+        id: randomId(len, pattern),
         allDay: false,
         end: new Date('January 18, 2023 13:00:00'),
         start: new Date('January 18, 2023 16:00:00'),
@@ -178,7 +181,7 @@ export var event = [
         type: 'appointment'
     },
     {
-        id: 16,
+        id: randomId(len, pattern),
         allDay: false,
         end: new Date('January 19, 2023 22:00:00'),
         start: new Date('January 19, 2023 23:00:00'),
@@ -189,7 +192,7 @@ export var event = [
         type: 'webinar'
     },
     {
-        id: 17,
+        id: randomId(len, pattern),
         allDay: false,
         end: new Date('January 17, 2023 7:00:00'),
         start: new Date('January 17, 2023 8:00:00'),
@@ -200,7 +203,7 @@ export var event = [
         type: 'webinar'
     },
     {
-        id: 18,
+        id: randomId(len, pattern),
         allDay: false,
         end: new Date('January 18, 2023 19:00:00'),
         start: new Date('January 18, 2023 22:00:00'),
@@ -211,7 +214,7 @@ export var event = [
         type: 'webinar'
     },
     {
-        id: 19,
+        id: randomId(len, pattern),
         allDay: false,
         end: new Date('February 1, 2023 9:00:00'),
         start: new Date('February 1, 2023 17:00:00'),
@@ -222,7 +225,7 @@ export var event = [
         type: 'webinar'
     },
     {
-        id: 20,
+        id: randomId(len, pattern),
         allDay: false,
         end: new Date('February 9, 2023 13:00:00'),
         start: new Date('February 9, 2023 16:00:00'),
@@ -233,7 +236,7 @@ export var event = [
         type: 'webinar'
     },
     {
-        id: 21,
+        id: randomId(len, pattern),
         allDay: false,
         end: new Date('January 10, 2023 13:00:00'),
         start: new Date('January 10, 2023 16:00:00'),
@@ -244,7 +247,7 @@ export var event = [
         type: 'webinar'
     },
     {
-        id: 22,
+        id: randomId(len, pattern),
         allDay: false,
         end: new Date('January 18, 2023 20:00:00'),
         start: new Date('January 18, 2023 20:20:00'),
@@ -255,11 +258,154 @@ export var event = [
         type: 'webinar'
     },
     {
-        id: 23,
+        id: randomId(len, pattern),
         allDay: false,
         end: new Date('January 15, 2023 13:00:00'),
         start: new Date('January 15, 2023 16:00:00'),
         title: 'Second Session with Alex Stan',
+        url: 'http://dummyurl.com',
+        img: clientImg,
+        clientLink: 'http://dummyurl.com',
+        type: 'webinar'
+    },
+    {
+        id: randomId(len, pattern),
+        allDay: false,
+        end: new Date('January 31, 2023 19:00:00'),
+        start: new Date('January 31, 2023 20:30:00'),
+        title: 'Crafting Content for Social Media',
+        url: 'http://dummyurl.com',
+        img: clientImg,
+        clientLink: 'http://dummyurl.com',
+        type: 'webinar'
+    },
+    {
+        id: randomId(len, pattern),
+        allDay: false,
+        end: new Date('March 1, 2023 10:00:00'),
+        start: new Date('March 1, 2023 11:30:00'),
+        title: 'TikTok for Small Business',
+        url: 'http://dummyurl.com',
+        img: clientImg,
+        clientLink: 'http://dummyurl.com',
+        type: 'webinar'
+    },
+    {
+        id: randomId(len, pattern),
+        allDay: false,
+        end: new Date(),
+        start: new Date(),
+        title: 'SBA Federal Small Business Certifications Workshop WEBINAR',
+        url: 'http://dummyurl.com',
+        img: clientImg,
+        clientLink: 'http://dummyurl.com',
+        type: 'webinar'
+    },
+    {
+        id: randomId(len, pattern),
+        allDay: false,
+        end: new Date(),
+        start: new Date(),
+        title: 'Social media for your small business: Webinar',
+        url: 'http://dummyurl.com',
+        img: clientImg,
+        clientLink: 'http://dummyurl.com',
+        type: 'webinar'
+    },
+    {
+        id: randomId(len, pattern),
+        allDay: false,
+        end: new Date(),
+        start: new Date(),
+        title: 'Digital & Social Media Marketing Webinar',
+        url: 'http://dummyurl.com',
+        img: clientImg,
+        clientLink: 'http://dummyurl.com',
+        type: 'webinar'
+    },
+    {
+        id: randomId(len, pattern),
+        allDay: false,
+        end: new Date('June 1, 2023 19:00:00'),
+        start: new Date('June 1, 2023 20:30:00'),
+        title: 'How To Do Webinars',
+        url: 'http://dummyurl.com',
+        img: clientImg,
+        clientLink: 'http://dummyurl.com',
+        type: 'webinar'
+    },
+    {
+        id: randomId(len, pattern),
+        allDay: false,
+        end: new Date('April 3, 2023 12:00:00'),
+        start: new Date('April 3, 2023 16:30:00'),
+        title: 'Online presence for growing your small business: Webinar',
+        url: 'http://dummyurl.com',
+        img: clientImg,
+        clientLink: 'http://dummyurl.com',
+        type: 'webinar'
+    },
+    {
+        id: randomId(len, pattern),
+        allDay: false,
+        end: new Date('February 23, 2023 19:00:00'),
+        start: new Date('February 23, 2023 20:30:00'),
+        title: 'Facebook and Instagram Advertising on a Small Budget',
+        url: 'http://dummyurl.com',
+        img: clientImg,
+        clientLink: 'http://dummyurl.com',
+        type: 'webinar'
+    },
+    {
+        id: randomId(len, pattern),
+        allDay: false,
+        end: new Date('February 25, 2023 19:00:00'),
+        start: new Date('February 25, 2023 20:30:00'),
+        title: 'How to Launch an E-Commerce Site That Grows With You',
+        url: 'http://dummyurl.com',
+        img: clientImg,
+        clientLink: 'http://dummyurl.com',
+        type: 'webinar'
+    },
+    {
+        id: randomId(len, pattern),
+        allDay: false,
+        end: new Date('February 2, 2023 10:00:00'),
+        start: new Date('February 2, 2023 11:30:00'),
+        title: 'WEBINAR Digital Tools, Software & Apps to Efficiently Manage Your Small Biz',
+        url: 'http://dummyurl.com',
+        img: clientImg,
+        clientLink: 'http://dummyurl.com',
+        type: 'webinar'
+    },
+    {
+        id: randomId(len, pattern),
+        allDay: false,
+        end: new Date('February 25, 2023 19:00:00'),
+        start: new Date('February 25, 2023 20:30:00'),
+        title: 'How to Launch an E-Commerce Site That Grows With You',
+        url: 'http://dummyurl.com',
+        img: clientImg,
+        clientLink: 'http://dummyurl.com',
+        type: 'webinar'
+    },
+    {
+        id: randomId(len, pattern),
+        allDay: false,
+        end: new Date('February 21, 2023 10:00:00'),
+        start: new Date('February 21, 2023 11:30:00'),
+        title: 'Google Ads for Small Business',
+        url: 'http://dummyurl.com',
+        img: clientImg,
+        clientLink: 'http://dummyurl.com',
+        type: 'webinar'
+    },
+    {
+        id: randomId(len, pattern),
+        allDay: false,
+        end: new Date('February 8, 2023 19:00:00'),
+        start: new Date('February 8, 2023 20:30:00'),
+        title: 'How to Drive More Traffic To Your Website',
         url: 'http://dummyurl.com',
         img: clientImg,
         clientLink: 'http://dummyurl.com',

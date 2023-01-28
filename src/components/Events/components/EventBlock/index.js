@@ -10,7 +10,6 @@ function EventBlock({data}) {
         window.open(url)
     }
 
-
     return ( 
         data ? 
             <div onClick={() => handleOpen(data?.url)}>
@@ -18,6 +17,8 @@ function EventBlock({data}) {
                     [style.webinar]: data?.type === 'webinar'
                 }, {
                     [style.appointment]: data?.appointment === 'appointment'
+                },{
+                    [style.self] : data?.type === 'self'
                 })}>
                     <div className={clsx(style.detail)}>
                         <div className={clsx(style.left)}>
@@ -25,6 +26,8 @@ function EventBlock({data}) {
                                 [style.appointment]: data?.type === 'appointment'
                             }, {
                                 [style.webinar]: data?.type === 'webinar'
+                            },{
+                                [style.self] : data?.type === 'self'
                             })}>{data?.type === 'webinar' ? 'Webinar: ' : ''} {data?.title ?? ''}</h5>
                             <p className={clsx(style.time, {
                                 [style.webinar]: data?.type === 'webinar'

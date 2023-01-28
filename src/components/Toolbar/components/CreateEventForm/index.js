@@ -43,8 +43,6 @@ function CreateEventForm() {
             setFieldValue('hoursEnd', 0)
         }
     },[values.allday])
-
-
     return ( 
         <Form>
             <TextField
@@ -108,10 +106,18 @@ function CreateEventForm() {
                 <SelectField name="type" label="Event's Type :">
                     <option value="">Choose event's type</option>
                     <option value="self">Self's event</option>
-                    <option value="appointment">Appointment</option>
                     <option value="webinar">Webinar</option>
                 </SelectField>
             </div>
+            {values.type === 'webinar' ? 
+                <TextField
+                    name='url'
+                    label='Website :'
+                    placeholder='Website of the event'
+                />
+            :
+                null
+            }
             <div className={clsx(style.button)}>
                 <button  type="submit" className={clsx(style.buttonSubmit)}>Add</button>
             </div>

@@ -28,10 +28,6 @@ function Popup() {
         }
     }),[open])
 
-    useEffect(()=>{
-        console.log(data)
-    })
-
     return ( 
         <div className={clsx(style.wrapper,{
             [style.active] : open === true

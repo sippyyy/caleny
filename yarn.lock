@@ -8307,6 +8307,11 @@ raf@^3.4.1:
   dependencies:
     performance-now "^2.1.0"
 
+random-id@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.npmmirror.com/random-id/-/random-id-1.0.4.tgz"
+  integrity sha512-78QU7sgk2uUsXDu5B/CV8R2ee6yAWDhJxvYPCLNXDD2EIdjb7vOLNXEm4S6//s++u4hAkH7umdq+usngpcTSeA==
+
 randombytes@^2.1.0:
   version "2.1.0"
   resolved "https://registry.npmmirror.com/randombytes/-/randombytes-2.1.0.tgz"

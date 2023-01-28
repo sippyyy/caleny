@@ -28,6 +28,28 @@ const ColoredDateCellWrapper = ({ children }) =>
     React.cloneElement(React.Children.only(children), {
     })
 
+let pureEvents = JSON.parse?.(localStorage.getItem('events'))
+
+const parseEvent = (events)=>{
+    if(events){
+        const a = events.map(event => {
+            return {
+                id: event.id,
+                allDay: event.allDay,
+                end: new Date(event.end),
+                start: new Date(event.start),
+                clientLink: event.clientLink,
+                img: event.img,
+                title: event.title,
+                type: event.type,
+                url: event.url,
+            }
+        })
+        return a
+    }else{
+        return false
+    }
+}
 
 function MyCalendar({
     localizer = mLocalizer,
@@ -35,8 +57,7 @@ function MyCalendar({
     ...props
 }) {
     const [eventsOfday, setEventsOfDay] = useState('')
-    const [events, setEvents] = useState(JSON.parse?.(localStorage.getItem('events'))??event)
-
+    const [events, setEvents] = useState(pureEvents ? parseEvent(pureEvents)  : event)
 
     useUpdateEffect(()=>{
         localStorage.setItem('events', JSON.stringify(events))
@@ -65,7 +86,7 @@ function MyCalendar({
         () => ({
             components: {
                 timeSlotWrapper: ColoredDateCellWrapper,
-                toolbar: props => (<Toolbar {...props} events={events} setEvents={setEvents} />),
+                toolbar: props => (<Toolbar {...props} setEvents={setEvents} />),
                 timeGutterHeader: TimeGutterHeader,
                 eventWrapper: EventWrapper
             },

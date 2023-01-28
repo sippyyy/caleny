@@ -1,11 +1,10 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { MdKeyboardArrowLeft } from "@react-icons/all-files/md/MdKeyboardArrowLeft";
 import { MdKeyboardArrowRight } from "@react-icons/all-files/md/MdKeyboardArrowRight";
 import clsx from 'clsx'
 import style from './Toolbar.module.scss'
 import { RiArrowUpSLine } from "@react-icons/all-files/ri/RiArrowUpSLine";
 import { useClickAway } from "ahooks";
-import {event} from "../../mock_api/event";
 import CreateEvent from "./components/CreateEvents";
 import { showPopup } from "../Popup";
 
@@ -91,7 +90,7 @@ function Toolbar(props) {
     }
 
     const handleShowPopup = ()=>{
-        showPopup(<CreateEvent events={props.events} setEvents={props.setEvents} />)
+        showPopup(<CreateEvent setEvents={props.setEvents} />)
     }
 
     return (
